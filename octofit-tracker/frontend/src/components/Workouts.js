@@ -6,6 +6,7 @@ function Workouts() {
   const [rawData, setRawData] = useState(null);
   const [error, setError] = useState(null);
   const [showRawModal, setShowRawModal] = useState(false);
+  // Codespace Django REST API endpoint: https://{CODESPACE_NAME}-8000.app.github.dev/api/workouts
   const endpoint = getApiUrl('workouts');
 
   const fetchData = useCallback(async () => {
